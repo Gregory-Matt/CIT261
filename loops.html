@@ -1,0 +1,62 @@
+<html>
+  <body>
+    <script>
+      //Good path of the while loop
+      document.write("While Loop Good Path<br />")
+      var x = 0;
+      while (x < 10){
+        document.write(x +"<br />")
+        x++;
+      }
+
+
+      //Nasty path of the while loop
+      /*This expression will never end up being true and will cause the loop
+      never to run.*/
+      x = 0
+      while (x > 10){
+        document.write(x + "<br />")
+        x++;
+      }
+
+      //Nasty path of the while loop
+      /*Increment is missing. This will cause an infinite loop because the
+      expression will never be false.*/
+      x = 0
+      while (x < 10){
+        document.write(x + "<br />")
+      }
+
+      //Nasty path of the while loop
+      /*With no expression, nothing displays*/
+      x = 0
+      while(){
+        document.write(x + "<br />")
+        x++;
+      }
+
+      //Good path of the do while loop
+      document.write("Do-While Loop Good Path<br />")
+      var counter = 0;
+      do {
+        document.write(counter +"<br />")
+        counter++;
+      } while (counter < 10)
+
+      //Nasty path of the do while loop
+      /*Causes loop to keep cycling*/
+      counter = 0;
+      do{
+        document.write(counter +"<br />")
+        counter++;
+      }
+
+      //Good path of the for loop
+      document.write("For Loop Good Path<br />")
+      var i = 0
+      for (i = 0; i < 10; i++){
+        document.write(i + "<br />");
+      }
+    </script>
+  </body>
+</html>
