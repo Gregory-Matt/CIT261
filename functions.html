@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <script>
+      function introduceYourself(){
+        alert("Hi, I'm Matt!")
+      }
+
+      function enterName(){
+        var name = prompt("Enter your name: ");
+        document.write("Hello " + name + " my name is Matt!");
+      }
+    </script>
+  </head>
+  <body>
+    <p>Push the button to introduce yourself.</p>
+
+    <form>
+      <input type="button" onclick="introduceYourself()" value="Introduction">
+    </form>
+
+    <br>
+    <br>
+
+    <form>
+      <input type="button" onclick="enterName()" value="Click Me!">
+    </form>
+
+  </body>
+</html>
